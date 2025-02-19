@@ -97,7 +97,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-4xl font-bold mb-12 text-center">Mes Projets</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">Mes projets</h2>
         
         {/* Filter Buttons */}
         <div className="flex justify-center mb-10 space-x-4">
