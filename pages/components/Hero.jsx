@@ -13,7 +13,7 @@ const Hero = () => {
           Pierrick Butin
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-8">
-          Responsable informatique et Développeur Web & Mobile
+          Responsable informatique et développeur Web & Mobile
         </p>
         <div className="flex justify-center space-x-4">
           <a 

@@ -20,7 +20,7 @@ const Projects = () => {
     {
       id: 7,
       title: 'Responsable Informatique - Lamie Mutuelle',
-      category: 'web',
+      category: 'responsable',
       image: '/projects/lamie-mutuelle.png',
       tags: ['ReactJS', 'NodeJS', 'PostgreSQL', 'Agile', 'Gestion de projet'],
       description: 'Supervision de la sécurité des systèmes d\'information, gestion des données, formation des utilisateurs et administration des actifs numériques.',
@@ -61,7 +61,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'Projet de fin d\'étude - Sopra Steria',
-      category: 'mobile',
+      category: '',
       image: '/projects/sopra-steria.jpg',
       tags: ['C#', 'Unity 3D', 'Blender', 'Conception UX/UI'],
       description: 'Prototype de borne holographique pour le retail, avec interface vocale interactive.',
@@ -72,7 +72,7 @@ const Projects = () => {
       id: 2,
       title: 'Arcelor Mittal',
       category: 'VBA',
-      image: '/projects/arcelor.jpg',
+      image: '/projects/arcelor.webp',
       tags: ['VBA', 'Agile', 'Cycle en V'],
       description: 'Développement d\'un outil d\'aide au suivi de la production pour une ligne de fabrication.',
       demoLink: 'https://france.arcelormittal.com/',
@@ -134,7 +134,7 @@ const Projects = () => {
               key={project.id}
               className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300"
             >
-              <div className="relative overflow-hidden h-48">
+              <div className="relative overflow-hidden h-48 p-2">
                 <img 
                   src={project.image} 
                   alt={project.title}
