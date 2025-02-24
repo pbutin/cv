@@ -10,7 +10,7 @@ const Projects = () => {
     {
       id: 8,
       title: 'Blind-Test',
-      category: 'mobile',
+      category: 'personnel',
       image: '/projects/blind-test.png',
       tags: ['Travail en cours', 'NextJS', 'Tailwind', 'TypeScript', 'GoogleSheetAPI'],
       description: 'Création d\'une application mobile de gestion de blindtest pour l\'entreprise Francis-mixe.',
@@ -20,7 +20,7 @@ const Projects = () => {
     {
       id: 7,
       title: 'Responsable Informatique - Lamie Mutuelle',
-      category: 'responsable',
+      category: 'professionel',
       image: '/projects/lamie-mutuelle.png',
       tags: ['ReactJS', 'NodeJS', 'PostgreSQL', 'Agile', 'Gestion de projet'],
       description: 'Supervision de la sécurité des systèmes d\'information, gestion des données, formation des utilisateurs et administration des actifs numériques.',
@@ -30,18 +30,17 @@ const Projects = () => {
     {
       id: 6,
       title: 'O-Temps pour soi',
-      category: 'web',
+      category: 'personnel',
       image: '../projects/o-tempspoursoi.png',
       tags: ['HTML', 'MaterializeCSS'],
       description: 'Création d\'un site vitrine pour l\'entreprise O-tempsPourSoi.',
       demoLink: 'https://o-tempspoursoi.fr/',
       codeLink: 'https://github.com/pbutin/oTempsPourSoi',
     },
-
     {
       id: 5,
       title: 'Consultant - Amadeus',
-      category: 'web',
+      category: 'wprofessioneleb',
       image: '/projects/Amadeus_Logo.svg',
       tags: ['C# .NET', 'Angular', 'Agile', 'Kanban'],
       description: 'Projet de suivi et d\'alerte en temps réel des voyageurs. Sécurisation et amélioration de la fiabilité du système.',
@@ -51,7 +50,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Consultant - Amadeus',
-      category: 'web',
+      category: 'professionel',
       image: '/projects/Amadeus_Logo.svg',
       tags: ['C# .NET', 'KnockoutJS', 'Agile - SAFe'],
       description: 'Amélioration d\'un ERP hôtelier, refonte du système d\'autorisation vers un modèle granulaire basé sur les permissions.',
@@ -61,7 +60,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'Projet de fin d\'étude - Sopra Steria',
-      category: '',
+      category: 'professionel',
       image: '/projects/sopra-steria.jpg',
       tags: ['C#', 'Unity 3D', 'Blender', 'Conception UX/UI'],
       description: 'Prototype de borne holographique pour le retail, avec interface vocale interactive.',
@@ -79,7 +78,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Arcelor Mittal',
-      category: 'VBA',
+      category: 'professionel',
       image: '/projects/arcelor.webp',
       tags: ['VBA', 'Agile', 'Cycle en V'],
       description: 'Développement d\'un outil d\'aide au suivi de la production pour une ligne de fabrication.',
@@ -89,7 +88,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'Jacquart et Fils',
-      category: 'data',
+      category: 'professionel',
       image: '/projects/jacquart.jpg',
       tags: ['MySQL', 'HTML/CSS', 'JavaScript', 'Cycle en V'],
       description: 'Optimisation du stockage des nomenclatures et automatisation du calcul des prix de revient.',
@@ -118,20 +117,20 @@ const Projects = () => {
             Tous
           </button>
           <button 
-            onClick={() => setActiveFilter('web')}
+            onClick={() => setActiveFilter('professionel')}
             className={`px-4 py-2 rounded-md transition ${
-              activeFilter === 'web' ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+              activeFilter === 'professionel' ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
             }`}
           >
-            Web
+            Professionel
           </button>
           <button 
-            onClick={() => setActiveFilter('mobile')}
+            onClick={() => setActiveFilter('personnel')}
             className={`px-4 py-2 rounded-md transition ${
-              activeFilter === 'mobile' ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+              activeFilter === 'personnel' ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
             }`}
           >
-            Mobile
+            Personnel
           </button>
         </div>
         
