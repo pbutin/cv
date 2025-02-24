@@ -69,6 +69,14 @@ const Projects = () => {
       codeLink: '',
     },
     {
+      id: 9,
+      category: 'personnel',
+      image: '../projects/qrienteering.svg',
+      title: 'QRorienteering',
+      tags: ['Android Studio', 'QRCode'],
+      description: 'Création d\'une application Android pour faciliter la mise en place d\'entrainement de course d\'orientation grace à des QR codes.',
+    },
+    {
       id: 2,
       title: 'Arcelor Mittal',
       category: 'VBA',
