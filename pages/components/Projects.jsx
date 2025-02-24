@@ -8,6 +8,16 @@ const Projects = () => {
   
   const projects = [
     {
+      id: 10,
+      title: 'Home-Assistant recipe Manager',
+      category: 'personnel',
+      image: '/projects/home-assistant.svg',
+      tags: ['Home-Assistant', 'Pyhton', 'Javascript'],
+      description: 'Création d\'une bibliothèque Home Assistant pour stocker des recettes de cuisine.',
+      demoLink: '',
+      codeLink: 'https://github.com/pbutin/homeassistant-recipe-manager',
+    },
+    {
       id: 8,
       title: 'Blind-Test',
       category: 'personnel',
