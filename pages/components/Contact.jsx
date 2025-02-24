@@ -51,7 +51,7 @@ const Contact = () => {
 
 
   return (
-    <section id="contact" className="py-20 bg-gray-800">
+    <section id="contact" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl font-bold mb-12 text-center">Me contacter</h2>
         
@@ -59,7 +59,7 @@ const Contact = () => {
           <div className="md:w-1/2">
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-gray-700 rounded-lg">
+                <div className="p-3 bg-gray-800 rounded-lg">
                   <MailIcon size={24} className="text-blue-500" />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-gray-700 rounded-lg">
+                <div className="p-3 bg-gray-800 rounded-lg">
                   <PhoneIcon size={24} className="text-blue-500" />
                 </div>
                 <div>
@@ -83,7 +83,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-gray-700 rounded-lg">
+                <div className="p-3 bg-gray-800 rounded-lg">
                   <MapPinIcon size={24} className="text-blue-500" />
                 </div>
                 <div>
@@ -101,14 +101,14 @@ const Contact = () => {
                 <a 
                   href="https://github.com/pbutin" 
                   target="_blank"
-                  className="p-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
+                  className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition"
                 >
                   <Github size={24} />
                 </a>
                 <a 
                   href="https://linkedin.com/in/pbutin" 
                   target="_blank"
-                  className="p-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
+                  className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition"
                 >
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -145,7 +145,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
                 <div>
@@ -159,7 +159,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               
@@ -190,7 +190,7 @@ const Contact = () => {
                   onChange={handleChange}
                   rows="5"
                   required
-                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 ></textarea>
               </div>
               
@@ -198,7 +198,7 @@ const Contact = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={`px-6 py-3 flex items-center justify-center space-x-2 rounded-md transition ${
-                  isSubmitting ? 'bg-gray-600 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
+                  isSubmitting ? 'bg-gray-700 cursor-not-allowed' : 'bg-blue-700 hover:bg-blue-800'
                 }`}
               >
                 {isSubmitting ? (
@@ -215,14 +215,14 @@ const Contact = () => {
               </button>
               
               {submitStatus === 'success' && (
-                <div className="p-4 bg-green-600/20 border border-green-600 rounded-md">
+                <div className="p-4 bg-green-700/20 border border-green-700 rounded-md">
                   <p className="text-green-400">
                     Votre message a été envoyé avec succès. Je vous répondrai dès que possible.
                   </p>
                 </div>
               )}
               {submitStatus === 'error' && (
-                <div className="p-4 bg-red-600/20 border border-red-600 rounded-md">
+                <div className="p-4 bg-red-700/20 border border-red-700 rounded-md">
                   <p className="text-red-400">
                     Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.
                   </p>
