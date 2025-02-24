@@ -24,7 +24,7 @@ const Projects = () => {
       image: '/projects/blind-test.png',
       tags: ['Travail en cours', 'NextJS', 'Tailwind', 'TypeScript', 'GoogleSheetAPI'],
       description: 'Création d\'une application mobile de gestion de blindtest pour l\'entreprise Francis-mixe.',
-      demoLink: 'https://blindtest.butin.eu/administration',
+      demoLink: '',
       codeLink: '',
     },
     {
